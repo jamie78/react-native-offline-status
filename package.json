@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-offline-status",
+        "scope": null,
+        "escapedName": "react-native-offline-status",
+        "name": "react-native-offline-status",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jakubkraus/ooo/roari-new-mobile-app"
+    ]
+  ],
+  "_from": "react-native-offline-status@latest",
+  "_id": "react-native-offline-status@1.0.0",
+  "_inCache": true,
+  "_location": "/react-native-offline-status",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-offline-status-1.0.0.tgz_1498327129084_0.9420494688674808"
+  },
+  "_npmUser": {
+    "name": "rahulgaba",
+    "email": "rahulgaba16@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-offline-status",
+    "scope": null,
+    "escapedName": "react-native-offline-status",
+    "name": "react-native-offline-status",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-offline-status/-/react-native-offline-status-1.0.0.tgz",
+  "_shasum": "2d27f80a64b37818b8d31825418cea49b0fb8338",
+  "_shrinkwrap": null,
+  "_spec": "react-native-offline-status",
+  "_where": "/Users/jakubkraus/ooo/roari-new-mobile-app",
+  "author": {
+    "name": "Rahul Gaba"
+  },
+  "bugs": {
+    "url": "https://github.com/rgabs/react-native-offline-status/issues"
+  },
+  "dependencies": {},
+  "description": "A network status bar which shows up on top when the app is offline.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2d27f80a64b37818b8d31825418cea49b0fb8338",
+    "tarball": "https://registry.npmjs.org/react-native-offline-status/-/react-native-offline-status-1.0.0.tgz"
+  },
+  "gitHead": "10dd0a844b962e81c7c02f29b934ab5635b319eb",
+  "homepage": "https://github.com/rgabs/react-native-offline-status#readme",
+  "keywords": [
+    "react",
+    "native",
+    "offline",
+    "status",
+    "bar",
+    "component"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "rahulgaba",
+      "email": "rahulgaba16@gmail.com"
+    }
+  ],
+  "name": "react-native-offline-status",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgabs/react-native-offline-status.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}
