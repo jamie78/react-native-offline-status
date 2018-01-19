@@ -1,18 +1,14 @@
 export default {
   container: {
-    backgroundColor: '#424242',
+    paddingTop: 0,
+    backgroundColor: '#4C4C4C',
     borderBottomWidth: 0,
-    height: 55,
+    height: 44,
   },
   offlineText: {
     color: 'white',
-    fontSize: 15,
-    alignSelf: 'center',
-    justifyContent: 'center',
   },
   icon: {
     color: 'white',
-    alignSelf: 'center',
-    justifyContent: 'flex-end',
   },
 };
