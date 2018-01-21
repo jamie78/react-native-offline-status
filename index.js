@@ -61,18 +61,18 @@ export default class OfflineBar extends Component {
     };
     const {offlineText = 'You are offline.'} = this.props;
     return !this.state.isConnected ?
-        <Header style={styles.container}>
-          <Left />
-          <Body>
-            <Animated.Text style={[styles.offlineText, animationStyle]}>
-              {offlineText}
-            </Animated.Text>
-          </Body>
-          <Right>
-            <Button transparent>
-              <Icon style={styles.icon} name="refresh" />
-            </Button>
-          </Right>
-        </Header> : null;
+      <Header style={styles.container}>
+        <Left />
+        <Body>
+          <Animated.Text style={[styles.offlineText, animationStyle]}>
+            {offlineText}
+          </Animated.Text>
+        </Body>
+        <Right>
+          <Button transparent onPress={() => {!this.state.isConnected? this.triggerAnimation(): null}}>
+            <Icon style={styles.icon} name="refresh" />
+          </Button>
+        </Right>
+      </Header> : null;
   }
 }
