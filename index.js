@@ -32,12 +32,12 @@ export default class OfflineBar extends Component {
     }
   }
   componentWillMount () {
-    NetInfo.isConnected.addEventListener('change', this.setNetworkStatus);
+    NetInfo.isConnected.addEventListener('connectionChange', this.setNetworkStatus);
     AppState.addEventListener('change', this._handleAppStateChange);
     this.animation = new Animated.Value(0);
   }
   componentWillUnMount () {
-    NetInfo.isConnected.removeEventListener('change', this.setNetworkStatus);
+    NetInfo.isConnected.removeEventListener('connectionChange', this.setNetworkStatus);
     AppState.removeEventListener('change', this._handleAppStateChange);
   }
   // Took Reference from https://egghead.io/lessons/react-create-a-button-shake-animation-in-react-native#/tab-code
@@ -61,18 +61,19 @@ export default class OfflineBar extends Component {
     };
     const {offlineText = 'You are offline.'} = this.props;
     return !this.state.isConnected ?
-      <Header style={styles.container}>
-        <Left />
-        <Body>
-          <Animated.Text style={[styles.offlineText, animationStyle]}>
-            {offlineText}
-          </Animated.Text>
-        </Body>
-        <Right>
-          <Button transparent onPress={() => {!this.state.isConnected? this.triggerAnimation(): null}}>
-            <Icon style={styles.icon} name="refresh" />
-          </Button>
-        </Right>
-      </Header> : null;
+      <View style={styles.wrapper}>
+        <Header style={styles.container}>
+          <Left />
+          <Body>
+            <Animated.Text style={[styles.offlineText, animationStyle]}>
+              {offlineText}
+            </Animated.Text>
+          </Body>
+          <Right>
+            <Button transparent onPress={() => {!this.state.isConnected? this.triggerAnimation(): null}}>
+              <Icon style={styles.icon} name="refresh" />
+            </Button>
+          </Right>
+        </Header></View> : null;
   }
 }
